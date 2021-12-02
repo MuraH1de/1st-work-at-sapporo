@@ -67,6 +67,7 @@ img{
     /*justify-content: right;
     margin: auto;
     margin: 0 0 0 400px;*/
+    margin: 0 48px 0 0;
 }
 
 .nav-item{
@@ -76,6 +77,11 @@ img{
     color: black;
 }
 
+
+.nav-item>a:hover{
+    display: inline-block;
+    animation: hurueru .1s  infinite;
+}
 
 
 
@@ -288,7 +294,8 @@ input[type*="radio"]:checked{
     top: 40%;
     left: 50%;
     transform: translate3d(-50%,-50%,0);
-    font-size: 4.5rem;
+    /*font-size: 4.5rem;*/
+    font-size: 3.1vw;
     font-weight: bold;
     color: #fff;
     letter-spacing: 0.1em;
@@ -299,11 +306,11 @@ input[type*="radio"]:checked{
     top: 60%;
     left: 48%;
     transform: translate3d(-50%,-50%,0);
-    font-size: 2.8rem;
+    /*font-size: 2.8rem;*/
+    font-size: 2vw;
     color: #fff;
     letter-spacing: 0.1em;
 }
-
 
 /* Footer */
 .footer{  
@@ -406,6 +413,11 @@ input[type*="radio"]:checked{
     /*width: 683px;*/
     width: 50%;
     background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
 }
 
 .course__sub{
@@ -413,26 +425,30 @@ input[type*="radio"]:checked{
 }
 
 .course__sub-right{
-    margin: 128px 100px 24px 48px;
-    font-size: 2.4rem;
+    /*margin: 128px 100px 24px 48px;*/
+    margin: 5vw 8.0vw 2vw 4vw;
+    font-size: 2.0vw;
     font-weight: bold;
 }
 
 .course__text-right{
-    margin: 0 100px 60px 48px;
-    font-size: 1.6rem;
+    /*margin: 0 100px 60px 48px;*/
+    margin: 0 8vw 6vw 4vw;
+    font-size: 1.2vw;
     line-height: 2;
 }
 
 .course__sub-left{
-    margin: 128px 48px 24px 100px;
-    font-size: 2.4rem;
+    /*margin: 128px 48px 24px 100px;*/
+    margin: 5vw 4.0vw 2vw 8vw;
+    font-size: 2.0vw;
     font-weight: bold;
 }
 
 .course__text-left{
-    margin: 0 48px 0 100px;
-    font-size: 1.6rem;
+    /*margin: 0 48px 0 100px;*/
+    margin: 0 4vw 6vw 8vw;
+    font-size: 1.2vw;
     line-height: 2;
 }
 
@@ -455,3 +471,243 @@ CSSを適用していく時は、下記テンプレートをコピペして
 /*画面全体の基本設定*/
 
 /*画像を伸縮させるために必要*/
+
+
+
+/*スマホ版の設定*/
+@media screen and (max-width:640px){
+    /* 最大640pxのデバイスで見た場合の設定という意味 */
+
+    /* ----- Header ----- */
+    .header{
+        display: none;
+        /* Headerは表示させない */
+    }
+
+    /* ----- Hero Image ----- */
+    .hero-image{
+        top: 0;
+        width: auto;
+        height: 100%;
+        margin: 0 0 24px;
+    }
+
+
+    .hero-image__text{
+        text-align: center;
+        white-space: nowrap;
+
+        top: 20%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+        font-size: 4.5vw;
+    }
+    .hero-image__sub{
+        font-size: 4.0vw;
+        text-align: center;
+        top: 60%;
+        left: 40%;
+        transform: translate3d(-30%,-50%,0);
+    }
+    /* ----- Hero Image ここまでまだ ----- */
+
+    /* About */
+    .profile__text{
+        padding: 0 10px 0 10px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .profile__text1{
+        padding: 0 10px 0 10px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .profile__text2{
+        padding: 0 10px 0 10px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .profile__text3{
+        padding: 0 10px 0 10px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .profile__eyecatch{
+        width: 100%;
+        align-items: center;
+    }
+
+    /* About ここまで終了 */
+
+    /* ----- Course ----- */
+    .course__item{
+        font-size: 1.2rem;
+        display: block;
+    }
+    .course__text{
+        padding: 0 10px 0 10px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .course__frame{
+        display: flex;
+        width: 100%;
+    }
+    .course__item{
+        width: 100%;
+        
+    }
+    .course__item1{
+        order: 1;
+    }
+    .course__item2{
+        order: 2;
+        
+    }
+    .course__item3{
+        order: 4;
+        
+    }
+
+    .course__item4{
+        order: 3;
+    }
+    .course__item5{
+        order: 5;
+    }
+    .course__item6{
+        order: 6;
+        
+    }
+    .course__sub-right{
+        font-size: 1.2rem;
+    }
+    .course__text-right{
+        font-size: 1.2vw;
+    }
+    .course__sub-left{
+        font-size: 1.2rem;
+        margin: 5vw 8.0vw 2vw 4vw;
+    }
+    .course__text-left{
+        font-size: 1.2vw;
+        margin: 0 8vw 6vw 4vw;
+    }
+    /* ----- Course ここまで終了 ----- */
+
+    /* ----- News ----- */
+    .news__list{
+        display: block;
+        margin: 0 0 64px;
+    }
+    .news__item{
+        width: 100%;
+    }
+    .news__contents{
+        padding: 0 10px 20px 10px;
+    }
+    .news__comment{
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+    /* ----- News ここまで終了 ----- */
+
+    /* ----- Access ----- */
+    .access__list{
+        display: block;
+        
+    }
+    .access-title{
+        text-align: left;
+        padding: 8px 0;
+        font-size: 1.2rem;
+    }
+    .access-item{
+        text-align: left;
+        width: 100%;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    /* ----- Access ここまで完了 ----- */
+
+    /* ----- Contact ----- */
+    .contact{
+        padding: 80px 0 64px;
+    }
+    .contact__text{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .form-wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .form-inner{
+        /* 要素を縦並びにする */
+        display: block;
+        margin: 0 0 50px;
+    }
+    .form-title{
+        width: 100%;
+        text-align: left;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+    .form-item{
+        width: 100%;
+        margin: 0 0 40px;
+    }
+    .form-parts{
+        padding: 10px 8px;
+        letter-spacing: -0.05em;
+        border-radius: 0;
+    }
+    .form-label{
+        margin: 0 20px 0 0;
+        letter-spacing: -0.05em;
+        line-height: 3;
+    }
+    .btn{
+        width: 80%;
+        font-size: 1.6rem;
+        padding: 17px 0;
+        margin: 0 10%;
+        align-items: center;
+    }
+    .btn-submit{
+        border-radius: 0;
+    }
+    /* ----- Contact ここまで完了 ----- */
+
+    /* ----- Footer ----- */
+    .footer{
+        padding: 20px 0;
+    }
+    .copyrights{
+        font-size: 1.2rem;
+    }
+    /* ----- Footerここまで終了 ----- */
+
+    .br-pc{
+        display: none;
+    }
+}
+
+
+/* HeroImageの改行対策 */
+@media screen and (min-width: 641px){
+    .br-sp {
+        display: none; 
+    }
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
