@@ -426,29 +426,29 @@ input[type*="radio"]:checked{
 
 .course__sub-right{
     /*margin: 128px 100px 24px 48px;*/
-    margin: 5vw 8.0vw 2vw 4vw;
-    font-size: 2.0vw;
+    margin: 4vw 8.0vw 2vw 4vw;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
 .course__text-right{
     /*margin: 0 100px 60px 48px;*/
-    margin: 0 8vw 6vw 4vw;
-    font-size: 1.2vw;
+    margin: 0 8vw 4vw 4vw;
+    font-size: 1.0vw;
     line-height: 2;
 }
 
 .course__sub-left{
     /*margin: 128px 48px 24px 100px;*/
-    margin: 5vw 4.0vw 2vw 8vw;
-    font-size: 2.0vw;
+    margin: 4vw 4.0vw 2vw 8vw;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
 .course__text-left{
     /*margin: 0 48px 0 100px;*/
-    margin: 0 4vw 6vw 8vw;
-    font-size: 1.2vw;
+    margin: 0 4vw 4vw 8vw;
+    font-size: 1.0vw;
     line-height: 2;
 }
 
@@ -542,7 +542,6 @@ CSSを適用していく時は、下記テンプレートをコピペして
     /* ----- Course ----- */
     .course__item{
         font-size: 1.2rem;
-        display: block;
     }
     .course__text{
         padding: 0 10px 0 10px;
@@ -550,23 +549,21 @@ CSSを適用していく時は、下記テンプレートをコピペして
         text-align: left;
     }
     .course__frame{
+        /* width: 100%; */
         display: flex;
-        width: 100%;
+        flex-direction: column;
     }
     .course__item{
         width: 100%;
-        
     }
     .course__item1{
         order: 1;
     }
     .course__item2{
         order: 2;
-        
     }
     .course__item3{
         order: 4;
-        
     }
 
     .course__item4{
@@ -577,21 +574,22 @@ CSSを適用していく時は、下記テンプレートをコピペして
     }
     .course__item6{
         order: 6;
-        
     }
     .course__sub-right{
-        font-size: 1.2rem;
+        font-size: 3.0vw;
+        margin: 5vw 2vw 0;
     }
     .course__text-right{
-        font-size: 1.2vw;
+        font-size: 3vw;
+        margin: 2vw 2vw 5vw;
     }
     .course__sub-left{
-        font-size: 1.2rem;
-        margin: 5vw 8.0vw 2vw 4vw;
+        font-size: 3.0vw;
+        margin: 5vw 2vw 0;
     }
     .course__text-left{
-        font-size: 1.2vw;
-        margin: 0 8vw 6vw 4vw;
+        font-size: 3vw;
+        margin: 2vw 2vw 5vw;
     }
     /* ----- Course ここまで終了 ----- */
 
