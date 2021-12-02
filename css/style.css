@@ -20,8 +20,18 @@ img{
     text-align: center;
 }
 
-
-
+/* 全体構成 */
+.all-main{
+    display: flex;
+}
+.left-main{
+    width: 80%;
+}
+.right-profile{
+    width: 20%;
+    background-color: #fff;
+    border-left: solid 1px #c9c9c9;
+}
 /* Header */
 
 .site-title{
