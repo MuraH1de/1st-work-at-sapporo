@@ -31,7 +31,35 @@ img{
     width: 20%;
     background-color: #fff;
     border-left: solid 1px #c9c9c9;
+    
 }
+.mou-pro{
+    padding: 80px 0;
+    background-color: #fff;
+}
+    
+.mou-pro__title{
+    margin: 60px 0 40px;
+    /* 上0 左右0 下40px */
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.mou-pro__sub{
+    margin: 0 0 64px;
+}
+.boss-img{
+    /* margin: 10px; */
+    width: 90%;
+}
+.mou-pro__text{
+    line-height: 1.75;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: left;
+}
+
 /* Header */
 
 .site-title{
@@ -487,6 +515,18 @@ CSSを適用していく時は、下記テンプレートをコピペして
 /*スマホ版の設定*/
 @media screen and (max-width:640px){
     /* 最大640pxのデバイスで見た場合の設定という意味 */
+
+    /* 全体構成 */
+    .all-main{
+        display: block;
+    }
+    .left-main{
+        width: 100%;
+    }
+    .right-profile{
+        display: none;
+    }
+
 
     /* ----- Header ----- */
     .header{
